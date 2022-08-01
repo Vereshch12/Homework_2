@@ -17,8 +17,16 @@ public class Main {
         float WeightFirst = 78.2f;
         float WeightSecond = 82.7f;
         float TotalWeight = WeightFirst + WeightSecond;
-        System.out.println("\nОбщий вес двух боксеров: " + TotalWeight);
+        System.out.println("\nОбщий вес двух боксеров: " + TotalWeight + " кг.");
         float DifferenceBetweenWeights = WeightSecond - WeightFirst;
-        System.out.println("Разница между весами двух боксеров: " + DifferenceBetweenWeights);
+        System.out.println("Разница между весами двух боксеров: " + DifferenceBetweenWeights + " кг.");
+
+        //Задание №3
+        byte Bananas = 5, Icecream = 2, Eggs = 4;
+        short Milk =  200;
+        float TotalWeightInGramms = Bananas*80 + Icecream*100 + Eggs*70 + (Milk/100)*105;
+        System.out.println("\nВес завтрака в граммах: " + TotalWeightInGramms + " гр.");
+        float TotalWeightsInKilogramms = (TotalWeightInGramms / 1000);
+        System.out.println("Вес завтрака в килограммах: " + TotalWeightsInKilogramms + " кг.");
     }
 }
