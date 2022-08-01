@@ -28,5 +28,18 @@ public class Main {
         System.out.println("\nВес завтрака в граммах: " + TotalWeightInGramms + " гр.");
         float TotalWeightsInKilogramms = (TotalWeightInGramms / 1000);
         System.out.println("Вес завтрака в килограммах: " + TotalWeightsInKilogramms + " кг.");
+
+        //Задание №4
+        byte NeedToLoseWeightInKg = 7;
+        short MinLoss = 250, MaxLoss = 500;
+        int MinDays, MaxDays;
+        int NeedYoLoseWeightInGr = NeedToLoseWeightInKg * 1000;
+        MaxDays = NeedYoLoseWeightInGr / MinLoss;
+        MinDays = NeedYoLoseWeightInGr / MaxLoss;
+        System.out.println("\n" + MaxDays + " дней уйдет на похудение, если спортсмен будет терять по 250 гр. в день");
+        System.out.println(MinDays + " дней уйдет на похудение, если спортсмен будет терять по 500 гр. в день");
+        int AverageLoss = (MaxLoss + MinLoss) / 2;
+        int AverageDays = NeedYoLoseWeightInGr / AverageLoss;
+        System.out.println(AverageDays + " дней в среднем уйдет на похудение, если спортсмен будет терять от 250 до 500 гр. в день");
     }
 }
