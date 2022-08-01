@@ -41,5 +41,20 @@ public class Main {
         int AverageLoss = (MaxLoss + MinLoss) / 2;
         int AverageDays = NeedYoLoseWeightInGr / AverageLoss;
         System.out.println(AverageDays + " дней в среднем уйдет на похудение, если спортсмен будет терять от 250 до 500 гр. в день");
+
+        //Задание №5
+        int MashaSalary = 67760, DenisSalary = 83690, KristinaSalary = 76230;
+        float Procent = 0.1f;
+        int NewMashaSalary = (int)((MashaSalary*Procent) + MashaSalary);
+        int NewDenisSalary = (int)((DenisSalary*Procent) + DenisSalary);
+        int NewKristinaSalary = (int)((KristinaSalary*Procent) + KristinaSalary);
+        byte Months = 12;
+        int MashaSalaryGroth = (NewMashaSalary - MashaSalary) * Months;
+        int DenisSalaryGroth = (NewDenisSalary - DenisSalary) * Months;
+        int KristinaSalaryGroth = (NewKristinaSalary - KristinaSalary) * Months;
+        System.out.println("\nМаша теперь получает " + NewMashaSalary + " рублей. Годовой доход вырос на " + MashaSalaryGroth + " рублей");
+        System.out.println("Денис теперь получает " + NewDenisSalary + " рублей. Годовой доход вырос на " + DenisSalaryGroth + " рублей");
+        System.out.println("Кристина теперь получает " + NewKristinaSalary + " рублей. Годовой доход вырос на " + KristinaSalaryGroth + " рублей");
+
     }
 }
